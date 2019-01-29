@@ -36,7 +36,9 @@ app.get('/bad',(req, res)=>{
   })
 });
 
-
+app.get('/project',(req, res)=>{
+  res.render('project.hbs');
+})
 app.get('/about',(req, res)=>{
      res.render('about.hbs',{
        titlePage:'About Us Page',
